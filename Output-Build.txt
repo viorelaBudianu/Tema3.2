@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: tema 3.2, Configuration: Debug Any CPU ------
+1>  tema 3.2 -> E:\vio\wantsome\w3\3.2\tema 3.2\tema 3.2\bin\Debug\tema 3.2.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
