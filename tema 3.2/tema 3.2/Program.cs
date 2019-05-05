@@ -16,11 +16,27 @@ namespace tema_3._2
             // CheckLeapYear();
 
             //2. ATM Transactions
-            ATM();
+            //ATM();
 
             //3. Add two numbers in a file: You have data in a file in two rows. On the third row save the sum of the numbers above.
             // File.Create("E:\\vio\\wantsome\\w3\\3.2\\file.txt");
-            //Console.WriteLine(File.ReadAllLines("E:\\vio\\wantsome\\w3\\3.2\\file2.txt").ToString());
+            string text = File.ReadAllText("E:\\vio\\wantsome\\w3\\3.2\\file2.txt");
+            Console.WriteLine($"{text}\n{text[0]}");
+            string[] lines = File.ReadAllLines("E:\\vio\\wantsome\\w3\\3.2\\file2.txt");
+            double suma = 0;
+            foreach (string line in lines)
+            {
+                suma += Convert.ToDouble(line);
+                Console.WriteLine("\t" + line);
+
+            }
+            string[] sum = new string[] { Convert.ToString(suma) };
+            File.WriteAllLines("E:\\vio\\wantsome\\w3\\3.2\\file2.txt",sum);
+            text = File.ReadAllText("E:\\vio\\wantsome\\w3\\3.2\\file2.txt");
+            Console.WriteLine($"{text}");
+
+
+
 
         }
         // Functiile pentru exercitiul 2
